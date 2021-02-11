@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ang-observables'`, () => {
+  it(`should have as title 'obs-start'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ang-observables');
+    expect(app.title).toEqual('obs-start');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ang-observables app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('obs-start app is running!');
   });
 });
